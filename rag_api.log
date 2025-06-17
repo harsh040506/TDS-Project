@@ -1,0 +1,171 @@
+2025-06-14 18:36:24,784 - INFO - [init] - Starting RAG System initialization on application load...
+2025-06-14 18:36:24,786 - INFO - [init] - Initializing RAG System...
+2025-06-14 18:36:24,786 - INFO - [init] - Running health checks...
+2025-06-14 18:36:27,194 - CRITICAL - [init] - CRITICAL: RAG system initialization FAILED: Ollama service is not responsive. Critical failure.
+Traceback (most recent call last):
+  File "C:\Users\HarshChhajer\Downloads\TDSProject\app.py", line 49, in <module>
+    asyncio.run(rag_system.initialize())
+  File "C:\Users\HarshChhajer\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\HarshChhajer\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "C:\Users\HarshChhajer\Downloads\TDSProject\rag_core.py", line 126, in initialize
+    await self.run_health_checks()
+  File "C:\Users\HarshChhajer\Downloads\TDSProject\rag_core.py", line 140, in run_health_checks
+    raise HealthCheckError("Ollama service is not responsive. Critical failure.")
+rag_core.HealthCheckError: Ollama service is not responsive. Critical failure.
+2025-06-14 18:39:00,262 - INFO - [init] - Starting RAG System initialization on application load...
+2025-06-14 18:39:00,264 - INFO - [init] - Initializing RAG System...
+2025-06-14 18:39:00,264 - INFO - [init] - Running health checks...
+2025-06-14 18:39:00,265 - INFO - [init] - Checking if Ollama service is running...
+2025-06-14 18:39:02,271 - WARNING - [init] - Ollama service is not responsive. Attempting to start it...
+2025-06-14 18:39:02,277 - INFO - [init] - Launched 'ollama serve' in the background (PID: 21604). Waiting for it to initialize...
+2025-06-14 18:39:03,575 - INFO - [init] - Ollama service started successfully.
+2025-06-14 18:39:04,438 - INFO - [init] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-14 18:39:05,757 - INFO - [init] - Attempting to initialize Gemini LLM (gemini-1.5-flash-latest) by trying up to 8 keys...
+2025-06-14 18:39:05,758 - INFO - [init] - --> Trying Gemini API key #1...
+2025-06-14 18:39:07,855 - INFO - [init] - Gemini LLM initialized successfully using one of the provided API keys.
+2025-06-14 18:39:07,855 - INFO - [init] - RAG System initialization complete.
+2025-06-14 18:39:07,857 - INFO - [init] - RAG System successfully initialized. Ready to accept requests.
+2025-06-14 18:39:19,160 - INFO - [aaeaf696-5876-4896-95f4-aa99eaf11f82] - Incoming Request: POST /api/query from 127.0.0.1
+2025-06-14 18:39:19,161 - INFO - [aaeaf696-5876-4896-95f4-aa99eaf11f82] - Response: 404 | Duration: 0.0010s
+2025-06-14 18:39:25,981 - INFO - [7caa1aa3-752c-4af4-945d-ca1506b2bb91] - Incoming Request: POST /api from 127.0.0.1
+2025-06-14 18:39:25,983 - INFO - [7caa1aa3-752c-4af4-945d-ca1506b2bb91] - Response: 308 | Duration: 0.0020s
+2025-06-14 18:39:25,994 - INFO - [2adbfe9f-d45c-4f8c-93b4-e7d784a86c25] - Incoming Request: POST /api/ from 127.0.0.1
+2025-06-14 18:39:25,995 - INFO - [2adbfe9f-d45c-4f8c-93b4-e7d784a86c25] - Response: 400 | Duration: 0.0013s
+2025-06-14 18:39:36,202 - INFO - [b18aba2a-73c6-4f86-a24f-9aacdcd4638c] - Incoming Request: POST /api from 127.0.0.1
+2025-06-14 18:39:36,202 - INFO - [b18aba2a-73c6-4f86-a24f-9aacdcd4638c] - Response: 308 | Duration: 0.0000s
+2025-06-14 18:39:36,225 - INFO - [6b693093-48d9-47d9-95c7-a6cf6ad324f3] - Incoming Request: POST /api/ from 127.0.0.1
+2025-06-14 18:39:36,740 - INFO - [6b693093-48d9-47d9-95c7-a6cf6ad324f3] - Successfully decoded and processed image
+2025-06-14 18:39:36,742 - INFO - [6b693093-48d9-47d9-95c7-a6cf6ad324f3] - Processing query: 'Tell me more aboput what is written in the given image about markdown?...'
+2025-06-14 18:39:42,871 - INFO - [6b693093-48d9-47d9-95c7-a6cf6ad324f3] - Response: 200 | Duration: 6.6455s
+2025-06-14 18:56:44,540 - INFO - [init] - Starting RAG System initialization on application load...
+2025-06-14 18:56:44,542 - INFO - [init] - Initializing RAG System...
+2025-06-14 18:56:44,543 - INFO - [init] - Running health checks...
+2025-06-14 18:56:44,543 - INFO - [init] - Checking if Ollama service is running...
+2025-06-14 18:56:44,827 - INFO - [init] - Ollama service is already running.
+2025-06-14 18:56:45,713 - INFO - [init] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-14 18:56:45,880 - INFO - [init] - Attempting to initialize Gemini LLM (gemini-1.5-flash-latest) by trying up to 10 keys...
+2025-06-14 18:56:45,881 - INFO - [init] - --> Trying Gemini API key #1...
+2025-06-14 18:56:48,112 - INFO - [init] - Gemini LLM initialized successfully using one of the provided API keys.
+2025-06-14 18:56:48,112 - INFO - [init] - RAG System initialization complete.
+2025-06-14 18:56:48,115 - INFO - [init] - RAG System successfully initialized. Ready to accept requests.
+2025-06-14 18:58:04,747 - INFO - [init] - Starting RAG System initialization on application load...
+2025-06-14 18:58:04,749 - INFO - [init] - Initializing RAG System...
+2025-06-14 18:58:04,749 - INFO - [init] - Running health checks...
+2025-06-14 18:58:04,751 - INFO - [init] - Checking if Ollama service is running...
+2025-06-14 18:58:05,030 - INFO - [init] - Ollama service is already running.
+2025-06-14 18:58:05,523 - INFO - [init] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-14 18:58:05,650 - INFO - [init] - Attempting to initialize Gemini LLM (gemini-2.0-flash) by trying up to 10 keys...
+2025-06-14 18:58:05,650 - INFO - [init] - --> Trying Gemini API key #1...
+2025-06-14 18:58:07,675 - INFO - [init] - Gemini LLM initialized successfully using one of the provided API keys.
+2025-06-14 18:58:07,675 - INFO - [init] - RAG System initialization complete.
+2025-06-14 18:58:07,675 - INFO - [init] - RAG System successfully initialized. Ready to accept requests.
+2025-06-14 18:58:12,980 - INFO - [a0b0e646-11de-46f8-9ff1-c92b3f08ca87] - Incoming Request: POST /api from 127.0.0.1
+2025-06-14 18:58:12,982 - INFO - [a0b0e646-11de-46f8-9ff1-c92b3f08ca87] - Response: 308 | Duration: 0.0020s
+2025-06-14 18:58:12,989 - INFO - [ccf39ed7-3f54-45dc-a44f-f42296bceb38] - Incoming Request: POST /api/ from 127.0.0.1
+2025-06-14 18:58:13,112 - INFO - [ccf39ed7-3f54-45dc-a44f-f42296bceb38] - Successfully decoded and processed image
+2025-06-14 18:58:13,113 - INFO - [ccf39ed7-3f54-45dc-a44f-f42296bceb38] - Processing query: 'Tell me more aboput what is written in the given image about markdown?...'
+2025-06-14 18:58:15,995 - INFO - [ccf39ed7-3f54-45dc-a44f-f42296bceb38] - Response: 200 | Duration: 3.0058s
+2025-06-14 19:54:16,676 - INFO - [init] - Starting RAG System initialization on application load...
+2025-06-14 19:54:16,680 - INFO - [init] - Initializing RAG System...
+2025-06-14 19:54:16,680 - INFO - [init] - Running health checks...
+2025-06-14 19:54:16,680 - INFO - [init] - Checking if Ollama service is running...
+2025-06-14 19:54:16,954 - INFO - [init] - Ollama service is already running.
+2025-06-14 19:54:18,036 - INFO - [init] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-14 19:54:18,262 - INFO - [init] - Attempting to initialize Gemini LLM (gemini-2.0-flash) by trying up to 10 keys...
+2025-06-14 19:54:18,262 - INFO - [init] - --> Trying Gemini API key #1...
+2025-06-14 19:54:20,497 - INFO - [init] - Gemini LLM initialized successfully using one of the provided API keys.
+2025-06-14 19:54:20,497 - INFO - [init] - RAG System initialization complete.
+2025-06-14 19:54:20,500 - INFO - [init] - RAG System successfully initialized. Ready to accept requests.
+2025-06-14 21:13:55,923 - INFO - [init] - Starting RAG System initialization on application load...
+2025-06-14 21:13:55,927 - INFO - [init] - Initializing RAG System...
+2025-06-14 21:13:55,927 - INFO - [init] - Running health checks...
+2025-06-14 21:13:55,927 - INFO - [init] - Checking if Ollama service is running...
+2025-06-14 21:13:56,221 - INFO - [init] - Ollama service is already running.
+2025-06-14 21:13:57,307 - INFO - [init] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-14 21:13:57,486 - INFO - [init] - Attempting to initialize Gemini LLM (gemini-2.0-flash) by trying up to 10 keys...
+2025-06-14 21:13:57,486 - INFO - [init] - --> Trying Gemini API key #1...
+2025-06-14 21:14:01,216 - INFO - [init] - Gemini LLM initialized successfully using one of the provided API keys.
+2025-06-14 21:14:01,218 - INFO - [init] - RAG System initialization complete.
+2025-06-14 21:14:01,220 - INFO - [init] - RAG System successfully initialized. Ready to accept requests.
+2025-06-14 21:14:06,848 - INFO - [7efa3fc3-95df-4647-87d0-a8799c0c73d1] - Incoming Request: POST /api from 127.0.0.1
+2025-06-14 21:14:06,852 - INFO - [7efa3fc3-95df-4647-87d0-a8799c0c73d1] - Response: 308 | Duration: 0.0037s
+2025-06-14 21:14:06,880 - INFO - [fc28387a-a870-418a-a155-0efe3947c014] - Incoming Request: POST /api/ from 127.0.0.1
+2025-06-14 21:14:07,057 - INFO - [fc28387a-a870-418a-a155-0efe3947c014] - Successfully decoded and processed image
+2025-06-14 21:14:07,059 - INFO - [fc28387a-a870-418a-a155-0efe3947c014] - Processing query: 'Tell me more aboput what is written in the given image about markdown?...'
+2025-06-14 21:14:10,620 - INFO - [fc28387a-a870-418a-a155-0efe3947c014] - Response: 200 | Duration: 3.7378s
+2025-06-14 21:15:48,459 - INFO - [356fbd31-1795-44ed-871b-cb77370b79d7] - Incoming Request: POST /api from 127.0.0.1
+2025-06-14 21:15:48,466 - INFO - [356fbd31-1795-44ed-871b-cb77370b79d7] - Response: 308 | Duration: 0.0064s
+2025-06-14 21:15:48,472 - INFO - [e89810df-e765-40b0-8260-3bbd580279d4] - Incoming Request: POST /api/ from 127.0.0.1
+2025-06-14 21:15:48,481 - INFO - [e89810df-e765-40b0-8260-3bbd580279d4] - Processing query: 'WHAT IS TDS?...'
+2025-06-14 21:15:49,446 - INFO - [e89810df-e765-40b0-8260-3bbd580279d4] - Response: 200 | Duration: 0.9742s
+2025-06-17 18:15:07,036 - INFO - [init] - Starting RAG System initialization on application load...
+2025-06-17 18:15:07,105 - INFO - [init] - Initializing RAG System...
+2025-06-17 18:15:07,105 - INFO - [init] - Running health checks...
+2025-06-17 18:15:07,105 - INFO - [init] - Checking if Ollama service is running...
+2025-06-17 18:15:07,537 - INFO - [init] - Ollama service is already running.
+2025-06-17 18:15:09,562 - INFO - [init] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-17 18:15:11,039 - INFO - [init] - Attempting to initialize Gemini LLM (gemini-2.0-flash) by trying up to 10 keys...
+2025-06-17 18:15:11,039 - INFO - [init] - --> Trying Gemini API key #1...
+2025-06-17 18:15:12,175 - INFO - [init] - Gemini LLM initialized successfully using one of the provided API keys.
+2025-06-17 18:15:12,176 - INFO - [init] - RAG System initialization complete.
+2025-06-17 18:15:12,180 - INFO - [init] - RAG System successfully initialized. Ready to accept requests.
+2025-06-17 18:15:13,238 - INFO - [2c7e8335-15f0-4fe1-a2c9-b9e486aa4dd1] - Incoming Request: POST /api/query from 127.0.0.1
+2025-06-17 18:15:13,238 - INFO - [2c7e8335-15f0-4fe1-a2c9-b9e486aa4dd1] - Response: 404 | Duration: 0.0000s
+2025-06-17 18:15:32,599 - INFO - [b3924342-7ca3-4e31-9512-cb838e7b47dd] - Incoming Request: POST /api from 127.0.0.1
+2025-06-17 18:15:32,601 - INFO - [b3924342-7ca3-4e31-9512-cb838e7b47dd] - Response: 308 | Duration: 0.0023s
+2025-06-17 18:15:32,609 - INFO - [f0b59e13-5ac3-42d3-add6-520640b2c958] - Incoming Request: POST /api/ from 127.0.0.1
+2025-06-17 18:15:32,612 - INFO - [f0b59e13-5ac3-42d3-add6-520640b2c958] - Response: 400 | Duration: 0.0026s
+2025-06-17 18:15:41,857 - INFO - [a98e7568-29a1-4dc4-9f87-5c5180bec79f] - Incoming Request: POST /api from 127.0.0.1
+2025-06-17 18:15:41,861 - INFO - [a98e7568-29a1-4dc4-9f87-5c5180bec79f] - Response: 308 | Duration: 0.0031s
+2025-06-17 18:15:41,868 - INFO - [2eeed33b-07b4-4512-930a-5150ce562f4c] - Incoming Request: POST /api/ from 127.0.0.1
+2025-06-17 18:15:41,872 - INFO - [2eeed33b-07b4-4512-930a-5150ce562f4c] - Processing query: 'What is UV?...'
+2025-06-17 18:15:43,452 - INFO - [2eeed33b-07b4-4512-930a-5150ce562f4c] - Response: 200 | Duration: 1.5846s
+2025-06-17 18:17:11,217 - INFO - [init] - Starting RAG System initialization on application load...
+2025-06-17 18:17:11,219 - INFO - [init] - Initializing RAG System...
+2025-06-17 18:17:11,219 - INFO - [init] - Running health checks...
+2025-06-17 18:17:11,219 - INFO - [init] - Checking if Ollama service is running...
+2025-06-17 18:17:11,501 - INFO - [init] - Ollama service is already running.
+2025-06-17 18:17:12,163 - INFO - [init] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-17 18:17:12,299 - INFO - [init] - Attempting to initialize Gemini LLM (gemini-2.0-flash) by trying up to 10 keys...
+2025-06-17 18:17:12,301 - INFO - [init] - --> Trying Gemini API key #1...
+2025-06-17 18:17:15,703 - INFO - [init] - Gemini LLM initialized successfully using one of the provided API keys.
+2025-06-17 18:17:15,704 - INFO - [init] - RAG System initialization complete.
+2025-06-17 18:17:15,707 - INFO - [init] - RAG System successfully initialized. Ready to accept requests.
+2025-06-17 18:17:21,916 - INFO - [a0d92971-57ea-40d5-a698-f4a84fe4c3cc] - Incoming Request: POST /api from 127.0.0.1
+2025-06-17 18:17:21,917 - INFO - [a0d92971-57ea-40d5-a698-f4a84fe4c3cc] - Response: 308 | Duration: 0.0010s
+2025-06-17 18:17:21,924 - INFO - [7befea73-c492-4b1d-b058-6188a5c575ea] - Incoming Request: POST /api/ from 127.0.0.1
+2025-06-17 18:17:21,928 - INFO - [7befea73-c492-4b1d-b058-6188a5c575ea] - Processing query: 'What is UV?...'
+2025-06-17 18:17:23,489 - INFO - [7befea73-c492-4b1d-b058-6188a5c575ea] - Response: 200 | Duration: 1.5654s
+2025-06-17 18:17:39,617 - INFO - [365e27a0-1fb1-48ad-ad01-29ac9c4c9207] - Incoming Request: POST /api from 127.0.0.1
+2025-06-17 18:17:39,617 - INFO - [365e27a0-1fb1-48ad-ad01-29ac9c4c9207] - Response: 308 | Duration: 0.0000s
+2025-06-17 18:17:39,625 - INFO - [12154c63-a44d-47d9-9aab-d654337abc0b] - Incoming Request: POST /api/ from 127.0.0.1
+2025-06-17 18:17:39,626 - INFO - [12154c63-a44d-47d9-9aab-d654337abc0b] - Processing query: 'What is UV in python?...'
+2025-06-17 18:17:40,794 - INFO - [12154c63-a44d-47d9-9aab-d654337abc0b] - Response: 200 | Duration: 1.1723s
+2025-06-17 18:20:43,886 - INFO - [6233d259-64f8-4f8c-ad97-85790b286a4a] - Incoming Request: POST /api from 127.0.0.1
+2025-06-17 18:20:43,886 - INFO - [6233d259-64f8-4f8c-ad97-85790b286a4a] - Response: 308 | Duration: 0.0000s
+2025-06-17 18:20:43,897 - INFO - [df10389f-15dc-41e3-92c3-8611da3ab43e] - Incoming Request: POST /api/ from 127.0.0.1
+2025-06-17 18:20:43,897 - INFO - [df10389f-15dc-41e3-92c3-8611da3ab43e] - Processing query: 'What is UV in python?...'
+2025-06-17 18:20:45,317 - INFO - [df10389f-15dc-41e3-92c3-8611da3ab43e] - Response: 200 | Duration: 1.4197s
+2025-06-17 18:21:01,471 - INFO - [d302880a-cd1b-4f47-81f1-52a31cacc82a] - Incoming Request: POST /api from 127.0.0.1
+2025-06-17 18:21:01,478 - INFO - [d302880a-cd1b-4f47-81f1-52a31cacc82a] - Response: 308 | Duration: 0.0073s
+2025-06-17 18:21:01,497 - INFO - [1d698489-72b5-4974-a738-15e618bfa8a0] - Incoming Request: POST /api/ from 127.0.0.1
+2025-06-17 18:21:01,499 - INFO - [1d698489-72b5-4974-a738-15e618bfa8a0] - Processing query: 'What is UV in python?...'
+2025-06-17 18:26:05,784 - INFO - [init] - Starting RAG System initialization on application load...
+2025-06-17 18:26:05,786 - INFO - [init] - Initializing RAG System...
+2025-06-17 18:26:05,786 - INFO - [init] - Running health checks...
+2025-06-17 18:26:05,786 - INFO - [init] - Checking if Ollama service is running...
+2025-06-17 18:26:06,054 - INFO - [init] - Ollama service is already running.
+2025-06-17 18:26:06,055 - WARNING - [init] - No internet connection. Gemini LLM will not be available.
+2025-06-17 18:26:07,340 - INFO - [init] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-17 18:26:07,487 - WARNING - [init] - Falling back to local Ollama LLM.
+2025-06-17 18:26:11,141 - INFO - [init] - Ollama LLM (llama3.2) initialized as fallback.
+2025-06-17 18:26:11,141 - INFO - [init] - RAG System initialization complete.
+2025-06-17 18:26:11,142 - INFO - [init] - RAG System successfully initialized. Ready to accept requests.
+2025-06-17 18:26:17,798 - INFO - [165ca2c6-cbd3-4472-90d0-9ab82848caf7] - Incoming Request: POST /api/ from 127.0.0.1
+2025-06-17 18:26:17,799 - INFO - [165ca2c6-cbd3-4472-90d0-9ab82848caf7] - Processing query: 'What is UV in python?...'
+2025-06-17 18:28:16,037 - INFO - [165ca2c6-cbd3-4472-90d0-9ab82848caf7] - Response: 200 | Duration: 118.2391s
+2025-06-17 18:28:51,818 - INFO - [e3fc7633-efee-4551-b49e-e0aee604def0] - Incoming Request: POST /api/ from 127.0.0.1
+2025-06-17 18:28:51,819 - INFO - [e3fc7633-efee-4551-b49e-e0aee604def0] - Processing query: 'What is Markdown?...'
+2025-06-17 18:30:26,515 - INFO - [e3fc7633-efee-4551-b49e-e0aee604def0] - Response: 200 | Duration: 94.6976s
